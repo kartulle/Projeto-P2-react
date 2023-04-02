@@ -1,0 +1,15 @@
+:root {
+    --grey-background-color: #333333;
+    --background-color-black: #1e1d1e;
+    --input-color-background: #555555;
+    --orange-primary-color: #D17F10;
+    --orange-hover: #FC9B18;
+    --text-color-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,160 @@
+body {
+    min-height: 100vh;
+    background: white;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.side-bar {
+    background: var(--background-color-black);
+    width: 250px;
+    /* left: -250px; */
+    height: 100vh;
+    position: relative;
+    top: 0;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+}
+
+header img {
+    width: 100px;
+    margin: 15px;
+    margin-left: 70px;
+}
+
+.close-btn {
+    position: absolute;
+    color: white;
+    font-size: 23px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.menu .item {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu .item a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+
+.item i {
+    margin-right: 15px;
+}
+
+.item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.item .sub-menu {
+    background: #262627;
+    display: none;
+}
+
+.menu-btn {
+    position: absolute;
+    color: rgb(0,0,0);
+    font-size: 35px;
+    cursor: pointer;
+    margin: 25px;
+}
+
+.side-bar.active {
+    left: 0;
+}
+
+.side-bar::-webkit-scrollbar {
+    width: 0px;
+}
+
+.item .sub-menu a {
+    padding-left: 80px;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.sub-item:hover {
+    background-color: var(--input-color-background);
+}
+
+main {
+    width: calc(100% - 250px);
+    background-color: var(--grey-background-color);
+    color: white;
+    overflow-y: auto;
+}
+
+.login input {
+    margin-top: 30px;
+    background-color: var(--input-color-background);
+    color: var(--text-color-white);
+    border: none;
+    height: 35px;
+    outline: none;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+.title {
+    padding-top: 24px;
+}
+
+.title h1 {
+    color: var(--orange-hover);
+    margin-bottom: -5px;
+}
+
+.table-box {
+    width: 100%;
+    overflow-y: auto;
+    height: 450px;
+}
+
+.btn-acoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+/* scrollbar editada  */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--orange-hover);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--orange-primary-color);
+  }
